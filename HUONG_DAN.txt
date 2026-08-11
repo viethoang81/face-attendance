@@ -1,0 +1,1 @@
+python -c "import pickle; d=pickle.load(open('data/encodings.pkl','rb')); [print('MSSV:', k, '- So luong:', len(v), '- Kich thuoc:', v[0].shape if len(v) > 0 else 'Trong') for k,v in d.items()]"

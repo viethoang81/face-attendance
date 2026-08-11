@@ -1,0 +1,55 @@
+{
+  "model_type": "torchscript",
+  "positive_class": "live",
+  "class_names": [
+    "spoof",
+    "live"
+  ],
+  "image_size": 128,
+  "threshold": 0.6,
+  "fixed_threshold": 0.6,
+  "input_color": "RGB",
+  "expects_face_crop": true,
+  "normalization": {
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "selection_metric": "val_loss",
+  "source_aggregation": "median",
+  "val_metrics": {
+    "threshold": 0.6,
+    "accuracy": 0.9839786381842457,
+    "precision": 1.0,
+    "recall": 0.9759519038076152,
+    "f1": 0.9878296146044625,
+    "apcer": 0.0,
+    "bpcer": 0.02404809619238477,
+    "acer": 0.012024048096192385,
+    "true_live": 487,
+    "false_live": 0,
+    "true_spoof": 250,
+    "false_spoof": 12
+  },
+  "val_source_metrics": {
+    "threshold": 0.6,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "apcer": 0.0,
+    "bpcer": 0.0,
+    "acer": 0.0,
+    "true_live": 2,
+    "false_live": 0,
+    "true_spoof": 1,
+    "false_spoof": 0
+  }
+}
